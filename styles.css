@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    
+width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+
+
+ nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+
+    width: 90%;
+   
+}
+
+ nav img {
+    width: 130px;
+}
+nav
+  button {
+    padding: 7px 20px;
+    background-color: white;
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    box-shadow: 0 0 4px hsla(321, 100%, 78%, 0.667);
+  
+}
+
+
+ .container {
+    
+ text-align: center;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 643px; 
+
+   font-weight: 700;
+}
+
+
+ .container p{
+    margin: 0 94px 20px 94px;
+   font-weight: 400;
+}
+ .container img {
+    margin-top: 50px;
+    width: 100%;
+}
+button{
+    padding: 15px 30px;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0 0 10px  hsla(192, 100%, 9%, 0.251);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  
+}
+button:hover,
+input[type="button"]:hover{
+    opacity: 90%;
+}
+
+
+
+.two{
+   
+    margin: 30px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+   gap: 300px;
+
+   font-weight: 700;
+}
+.two .col h1{
+    font-size: 50px;
+   margin-top: 0px;
+
+}
+.two .col p {
+    text-align: start;
+    font-weight: 400;
+    color: #7e7e7e;
+    margin-top: -13px;
+}
+.two .col img{
+    width: 30px;
+    
+
+}
+
+.bg{
+   
+    margin: 50px 0;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+
+
+   font-weight: 700;
+}
+.two .col h1{
+    font-size: 50px;
+   margin-top: 0px;
+  
+}
+
+.two .col img{
+    width: 30px;
+    
+
+}
+.bg img{
+    width: 25%;
+}
+.bg{
+    width: 100%;
+    
+}
+.one{
+    background-image: url('images/bg-section-top-desktop-1.svg'), url('images/bg-section-bottom-desktop-1.svg');
+    background-position: top center, bottom center; 
+    background-size: 100% contain ; 
+    background-repeat: no-repeat, no-repeat;
+    padding: 100px 0 80px 0;
+    width: 100%;
+}
+.bg .row{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    
+    background: #F6FBFF;
+    margin: 50px 0;
+    padding-top: 20px;
+}
+.bg .row .des{
+    max-width: 500px;
+    
+}
+h1{
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    
+}
+.bg .row .des p{
+    font-weight: 400;
+    margin-right: 10px;
+}
+.twoo .row{
+    background: white;
+    margin-top: -90px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.three{
+    background-image: url('images/bg-section-top-desktop-2.svg'), url('images/bg-section-bottom-desktop-2.svg');
+    background-position: top center, bottom center; 
+    background-size: 100% contain ; 
+    background-repeat: no-repeat, no-repeat;
+    padding: 50px 0 80px 0;
+    width: 100%;
+    
+   
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    margin-bottom: 40px;
+}
+.content button{
+    padding: 15px 50px;
+}
+footer {
+    background-image: url('images/bg-footer-top-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto; /* Ensure the wave spans the entire width */
+    background-color: hsl(192, 100%, 9%); /* Footer background color */
+    color: white;
+    padding-top: 100px; /* Space for content below the wave */
+    padding-bottom: 60px; /* Space at the bottom */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 250px 0 0 0 ;
+    position: relative;
+    z-index: 1;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: -140px; /* Moves the wave upwards */
+    left: 0;
+    width: 100%;
+    height: 150px; /* Adjust the height according to your wave image */
+    background-image: url('images/bg-footer-top-desktop.svg');
+    background-position: center;
+    background-size: cover;
+    z-index: -1; /* Ensures it sits behind the footer content */
+}
+
+/* Footer content container */
+footer .ftr {
+    width: 100%;
+ /* Limit the width of the footer content */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows elements to stack on smaller screens */
+}
+
+footer .col {
+    flex: 1;
+    min-width: 300px; 
+    margin-right: 210px;
+    
+}
+
+footer .col img {
+    width: 100px; /* Resize the logo */
+    margin-bottom: 20px;
+}
+
+footer .col p {
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: 14px;
+    margin: 10px 0;
+    display: flex;
+    gap: 5px;
+  
+}
+
+footer .col h2 {
+    margin-bottom: 20px;
+}
+
+footer .inp {
+    display: flex;
+    gap: 10px;
+}
+
+footer .inp input[type="text"] {
+    padding: 10px 60px;
+    flex: 1;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+footer .inp input[type="button"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+     margin-left: 20px;
+    cursor: pointer;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: -50px 100px;
+}
+
+footer .col p img {
+    width: 15px;
+    margin-right: 10px;
+    margin-top: 3px;
+ 
+}
+.icons {
+    display: flex;
+gap: 15px;
+}
+.icons a{
+  font-size: 28px;
+  color: white;
+ 
+}
+@media screen and (max-width: 376px) {
+    .two {
+      gap: 30px;
+       
+      flex-direction: column;
+      
+    }
+    footer .col {
+
+    
+        
+        margin: 0 ;
+    }
+    footer .row{
+        margin: -50px 29px;
+    }
+    footer .ftr {
+        width: 90%;
+        margin-left: 0;
+        padding: 0;
+    }
+    footer .inp {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+    footer .inp input[type="button"] {
+        margin-left: 0;
+    }
+    .container {
+        padding: 20px 30px;
+    }
+    nav{
+        padding: 20px 5px;
+    }
+    .container p {
+       margin: 15px 0px;
+    }
+    .bg .row {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .bg img {
+        width: 63%;
+    }
+    .bg .row .des {
+    text-align: center;
+    max-width: 360px;
+}
+.newsletter{
+    order: -1;
+}
+
+}
